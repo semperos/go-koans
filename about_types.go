@@ -8,6 +8,6 @@ func (cn coolNumber) multiplyByTwo() int {
 
 func aboutTypes() {
 	i := coolNumber(4)
-	assert(i == coolNumber(__int__))     // values can be converted between compatible types
-	assert(i.multiplyByTwo() == __int__) // you can add methods on any type you define
+	assert(i == coolNumber(_Int))     // values can be converted between compatible types
+	assert(i.multiplyByTwo() == _Int) // you can add methods on any type you define
 }

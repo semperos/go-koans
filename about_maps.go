@@ -8,24 +8,24 @@ func aboutMaps() {
 	}
 
 	age := ages["bob"]
-	assert(age == __int__) // map syntax is warmly familiar
+	assert(age == _Int) // map syntax is warmly familiar
 
 	age, ok := ages["bob"]
-	assert(ok == __bool__) // with a handy multiple-assignment variation
+	assert(ok == _Bool) // with a handy multiple-assignment variation
 
 	age, ok = ages["steven"]
-	assert(age == __int__)    // the zero value is used when absent
-	assert(ok == __boolean__) // though there are better ways to check for presence
+	assert(age == _Int)    // the zero value is used when absent
+	assert(ok == _Boolean) // though there are better ways to check for presence
 
-	assert(len(ages) == __int__) // length is based on keys
+	assert(len(ages) == _Int) // length is based on keys
 
 	ages["bob"] = 99
-	assert(ages["bob"] == __int__) // values can be changed for keys
+	assert(ages["bob"] == _Int) // values can be changed for keys
 
 	ages["steven"] = 77
-	assert(ages[__string__] == 77) // new ones can be added
+	assert(ages[_String] == 77) // new ones can be added
 
 	delete(ages, "steven")
 	age, ok = ages["steven"]
-	assert(ok == __boolean__) // key/value pairs can be removed
+	assert(ok == _Boolean) // key/value pairs can be removed
 }

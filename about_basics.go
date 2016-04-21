@@ -1,31 +1,31 @@
 package gokoans
 
 func aboutBasics() {
-	assert(__bool__ == true)  // what is truth?
-	assert(__bool__ != false) // in it there is nothing false
+	assert(_Bool == true)  // what is truth?
+	assert(_Bool != false) // in it there is nothing false
 
-	var i int = __int__
+	var i int = _Int
 	assert(i == 1.0000000000000000000000000000000000000) // precision is in the eye of the beholder
 
-	assert(5%2 == __int__)
-	assert(5*2 == __int__)
-	assert(5^2 == __int__)
+	assert(5%2 == _Int)
+	assert(5*2 == _Int)
+	assert(5^2 == _Int)
 
 	var x int
-	assert(x == __int__) // zero values are valued in Go
+	assert(x == _Int) // zero values are valued in Go
 
 	var f float32
-	assert(f == __float32__) // for types of all types
+	assert(f == _Float32) // for types of all types
 
 	var s string
-	assert(s == __string__) // both typical or atypical types
+	assert(s == _String) // both typical or atypical types
 
 	var c struct {
 		x int
 		f float32
 		s string
 	}
-	assert(c.x == __int__)     // and types within composite types
-	assert(c.f == __float32__) // which match the other types
-	assert(c.s == __string__)  // in a typical way
+	assert(c.x == _Int)     // and types within composite types
+	assert(c.f == _Float32) // which match the other types
+	assert(c.s == _String)  // in a typical way
 }
