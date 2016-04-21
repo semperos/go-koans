@@ -1,4 +1,4 @@
-package go_koans
+package gokoans
 
 func aboutArrays() {
 	fruits := [4]string{"apple", "orange", "mango"}
