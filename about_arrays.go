@@ -13,14 +13,14 @@ func aboutArrays() {
 
 	assert(fruits == [4]string{}) // comparing arrays is not like comparing apples and oranges
 
-	tasty_fruits := fruits[1:3]        // defining oneself as a variation of another
-	assert(tasty_fruits[0] == _String) // slices of arrays share some data
-	assert(tasty_fruits[1] == _String) // albeit slightly askewed
+	tastyFruits := fruits[1:3]        // defining oneself as a variation of another
+	assert(tastyFruits[0] == _String) // slices of arrays share some data
+	assert(tastyFruits[1] == _String) // albeit slightly askewed
 
-	assert(len(tasty_fruits) == _Int) // its length is manifest
-	assert(cap(tasty_fruits) == _Int) // but its capacity is surprising!
+	assert(len(tastyFruits) == _Int) // its length is manifest
+	assert(cap(tastyFruits) == _Int) // but its capacity is surprising!
 
-	tasty_fruits[0] = "lemon" // are their shared roots truly identical?
+	tastyFruits[0] = "lemon" // are their shared roots truly identical?
 
 	assert(fruits[0] == _String) // has this element remained the same?
 	assert(fruits[1] == _String) // how about the second?

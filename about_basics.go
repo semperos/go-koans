@@ -4,7 +4,7 @@ func aboutBasics() {
 	assert(_Bool == true)  // what is truth?
 	assert(_Bool != false) // in it there is nothing false
 
-	var i int = _Int
+	var i = _Int                                         // int is inferred
 	assert(i == 1.0000000000000000000000000000000000000) // precision is in the eye of the beholder
 
 	assert(5%2 == _Int)

@@ -28,4 +28,5 @@ func aboutMaps() {
 	delete(ages, "steven")
 	age, ok = ages["steven"]
 	assert(ok == _Boolean) // key/value pairs can be removed
+	assert(age == _Int)
 }
