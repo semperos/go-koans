@@ -31,6 +31,7 @@ var _Runner runner
 func TestTourKoans(t *testing.T) {
 	learnHello()
 	learnPackages()
+	learnFunctions()
 
 	fmt.Printf("\n%c[32;1mYou finished the tour. Great job!%c[0m\n\n", 27, 27)
 }
