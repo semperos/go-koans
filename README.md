@@ -16,14 +16,30 @@ best to balance current best practices and a low barrier of entry for newcomers
 repository). I will try to keep up to date with the latest stable releases. I
 hope I can rely on this wonderful community to help me with this.
 
-## Native Usage
+## Usage
 
-If you prefer to do things "natively" you may download, install, and configure
-the suite of tools provided by the binary or source distribution of your
-choice from the [Downloads page](https://golang.org/dl/).
+Install Go. See the [Downloads page](https://golang.org/dl/).
 
-1. Run `go test`.
-1. Make the failing tests pass, by replacing these types of `__variables__` with real values.
+Step into the directory for this project. You'll see there are a few different
+folders to choose from. I'd suggest starting with the "easy" koans by running:
+
+```
+go test -v github.com/semperos/go-koans/easy
+```
+
+This will run just the tests for the koans in the "easy" folder. After you've
+worked through those, you can move onto other folders.
+
+### How to Solve
+
+Running the tests will show you what's failing and thus what to work on next.
+In the source code, you'll find identifiers prefixed with an underscore. You
+need to either replace these with a legal value that makes the assertion true,
+or in some cases you need to delete an assertion (it will say
+`assert(_DeleteMe)`) so as to allow code execution to continue past that line.
+
+Run the appropriate `go test` invocation again after you've made your changes to
+see if you were right!
 
 ## Docker Usage
 
@@ -47,14 +63,3 @@ through the same steps to enlightenment described above.
 
 Bookmark the [spec](http://golang.org/ref/spec) and the [packages listing](http://golang.org/pkg/).
 You can also run the Go website locally with `godoc -http=:8080`.
-
-## Go support in Vim
-
-If you have an interest in a more fany vim setup, I urge you to consider
-the post on the [Go Development Environment for Vim](https://blog.gopheracademy.com/vimgo-development-environment/)
-on the Gopher Academy Blog.
-
-## Go-Koans support in Emacs
-
-[Jacek Wysocki](https://github.com/exu) has provided some nice Go Koans helper
-scripts for Emacs users at [exu/go-koans.el](https://github.com/exu/go-koans.el)
