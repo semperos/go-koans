@@ -18,6 +18,7 @@ const (
 	_Bool        bool    = false // ugh
 	_Boolean     bool    = true  // oh well
 	_Float32     float32 = -1.0
+	_Float64     float64 = -1.0
 	_DeleteMe    bool    = false
 )
 
