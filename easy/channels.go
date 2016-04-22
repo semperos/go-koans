@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 func aboutChannels() {
 	ch := make(chan string, 2)

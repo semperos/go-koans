@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 import "strings"
 

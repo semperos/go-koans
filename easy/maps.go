@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 func aboutMaps() {
 	ages := map[string]int{

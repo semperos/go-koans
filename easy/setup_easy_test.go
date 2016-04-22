@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ const (
 
 var _Runner runner
 
-func TestKoans(t *testing.T) {
+func TestEasyKoans(t *testing.T) {
 	aboutBasics()
 	aboutStrings()
 	aboutArrays()

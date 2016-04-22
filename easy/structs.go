@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 func aboutStructs() {
 	var bob struct {

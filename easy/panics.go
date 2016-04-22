@@ -1,4 +1,4 @@
-package gokoans
+package easy
 
 func divideFourBy(i int) int {
 	return 4 / i
