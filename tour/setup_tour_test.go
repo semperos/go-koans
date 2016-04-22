@@ -28,7 +28,7 @@ type runner interface {
 var _Runner runner
 
 func TestTourKoans(t *testing.T) {
-	//learnHello()
+	learnHello()
 	learnPackages()
 
 	fmt.Printf("\n%c[32;1mYou finished the tour. Great job!%c[0m\n\n", 27, 27)
